@@ -1,0 +1,177 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: '標楷體';
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-self: center;
+        }
+        
+        p {
+            writing-mode: vertical-rl;
+           
+            margin: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .all {
+            width: 400px;
+            height: 500px;
+            border: 1px solid #000;
+        }
+        
+        table {
+            width: 350px;
+            height: 450px;
+            margin: 20px auto;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            border-collapse: 1px solid #000;
+            z-index: 5;
+        }
+        
+        td {
+            border: 1px solid #000;
+        }
+        
+        .chess {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            background: white;
+            text-align: center;
+            font-size: 1.4rem;
+            font-family: '標楷體';
+            z-index: 4;
+           
+        }
+        
+        .box{
+            position:relative;
+        }
+        .flex {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: -2%;
+        }
+        
+        .spacing {
+            margin: 0 7px;
+        }
+        
+        .bagposition {
+            top: 20%;
+            transform: translateX(20%);
+        }
+        
+        .pawn {
+            margin: 0 28px;
+        }
+        
+        .pawnposition {
+            top: 30%;
+            transform: translateX(-4%);
+        }
+        
+        .soldiers {
+            color: red;
+            margin: 0 28px;
+        }
+        
+        .soldiersposition {
+            top: 64%;
+            transform: translateX(-4%);
+        }
+        
+        .gun {
+            color: red;
+        }
+        
+        .gunposition {
+            top: 75%;
+            transform: translateX(20%);
+        }
+        
+        .color {
+            color: red;
+        }
+        
+        .position2 {
+            top: 95%;
+        }
+        
+        .line {
+           
+            position: relative;
+           
+        }
+        
+
+         .line::before {
+            content: "";
+            width: 125px;
+            height: 1px;
+            background: #000;
+            transform: rotate(48deg);
+            position: absolute;
+            top:54px;
+            left: 138px;
+        
+           
+        } 
+        
+      .line::after {
+            content: "";
+            width: 130px;
+            height: 1px;
+            background: #000;
+            transform: rotate(-48deg);
+            position: absolute;
+            top: 51px;
+            left: 135px;
+        } 
+        
+        .line2 {
+            position: relative;
+        }
+
+        .line2::before {
+            content: "";
+            width: 139px;
+            height: 1px;
+            background: #000;
+            transform: rotate(47deg);
+            position: absolute;
+            top:402px;
+            left: 34%;
+        } 
+        .line2::after {
+            content: "";
+            width: 139px;
+            height: 1px;
+            background: #000;
+            transform: rotate(-45deg);
+            position: absolute;
+            top:400px;
+            left: 126px;
+        } 
+        
+        span {
+            font-size: 1.5rem;
+        }
+        
+        .font {
+            position: absolute;
+            top: 46%;
+            left: 20%;
+            
+            
+        }
