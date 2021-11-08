@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("bg-full.jpg") no-repeat center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            width: 90%;
+            height: 80%;
+            border: 1px solid rgb(146, 144, 144);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left {
+            width: 45vw;
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('main.jpg') no-repeat center/cover;
+            backdrop-filter: blur(50px);
+        }
+
+        .main {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .pic {
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+            object-position: 50% 50%;
+            filter: brightness(1);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        p {
+            width: 60%;
+            text-align: center;
+            color: white;
+            filter: brightness(1);
+        }
+
+        .main2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-right {
+            width: 45vw;
+            height: 40vh;
+            background-color: lightgrey;
+        }
+
+        .bottom-right {
+            width: 45vw;
+            height: 40vh;
+            background-color: #000;
+        }
+
+        .main3 {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row;
+        }
+
+        .top-right h1 {
+            color: #000;
+            text-align: left;
+            padding: 0 10%;
+        }
+
+        .top-right p {
+            width: 100%;
+            color: #000;
+            text-align: left;
+            padding: 0 10%;
+        }
+
+        .top-right img {
+            width: 40%;
+            height: 90%;
+        }
+
+        .main4 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .bottom-right img {
+            width: 40%;
+            height: 100%;
+        }
+
+        .bottom-right h1 {
+            text-align: left;
+        }
+
+        .bottom-right p {
+            width: 100%;
+            text-align: left;
+        }
+
+        .font {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                <div class="main">
+                    <img class="pic" src="ps4-ff7.png" alt="">
+                    <h1>Loremipsum </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates eum velit maiores sunt,
+                        repellat facilis quos accusantium eius veritatis, cumque illo? Earum optio, at eveniet vero
+                        doloribus laudantium impedit. Nostrum veritatis aperiam ullam ipsum
+                        adipisci quam, cum dolores, repellendus unde soluta velit mollitia. Perspiciatis tenetur
+                        asperiores magnam quae quasi? Autem!
+                    </p>
+                </div>
+            </div>
+            <div class="main2">
+
+                <div class="top-right">
+                    <div class="main3">
+                        <div class="font">
+                            <h1>lorem</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam earum libero esse
+                                optio eum, autem repellat sed illum fuga, dolor iure dolore obcaecati dolores
+                                reprehenderit pariatur quibusdam assumenda tenetur necessitatibus
+                                cum, dolorum nihil rem? Eaque, sunt adipisci quo cupiditate labore optio explicabo
+                                doloremque minima eius provident nostrum vero aperiam!
+                            </p>
+                        </div>
+                        <img src="cloud.png" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="bottom-right">
+                    <div class="main4">
+                        <div class="font">
+                            <h1>lorem</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum laborum sunt quaerat nam,
+                                iusto corrupti repellendus fugiat alias necessitatibus dignissimos consequatur.
+                                Veritatis laudantium ipsa, quo quaerat, perferendis ea
+                                corporis necessitatibus quasi asperiores, eligendi sequi ratione accusantium. Repellat
+                                ullam consectetur voluptatem perspiciatis deleniti quo, modi nesciunt ut, vitae quisquam
+                                possimus nihil!</p>
+                        </div>
+                        <img src="tifa.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
